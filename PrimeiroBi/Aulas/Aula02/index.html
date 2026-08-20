@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Registre-se</legend>
+        <h4>Informe seus dados para realizar o cadastro na plataforma</h4>
+
+        <form action="/url-api-back-end" method="post">
+
+            <label for="nome">Informe seu Nome:</label>
+            <input type="text" id="nome" name="nome" title="Digite seu nome completo" pattern="[A-Za-z ]+"
+                placeholder="Digite seu nome">
+            <br>
+
+            <label for="email">Informe seu Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required
+                title="Digite seu email">
+            <br>
+
+            <label for="senha">Informe sua Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required
+                title="Digite sua senha forte">
+            <br>
+
+            <label for="bio">Informe sua biografia:</label><br>
+            <textarea id="bio" name="bio" placeholder="Digite sua biografia" required title="Digite sua biografia"
+                rows="6" cols="26" style="" />
+            </textarea>
+
+            <br>
+            <label for="time">Selecione o Melhor Time</label>
+            <br>
+            <select name="time" id="time">
+                <option value="" selected disabled>Selecione o Melhor Time</option>
+                <optgroup label="Times do Brasil">
+                    <option value="flamengo">Flamengo</option>
+                    <option value="palmeiras">Palmeiras</option>
+                    <option value="santos">Santos</option>
+                    <option value="corinthians">Corinthians</option>
+                </optgroup>
+                <optgroup label="Times do Mundo">
+                    <option value="real-madrid">Real Madrid</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="manchester-united">Manchester United</option>
+                    <option value="bayern-munchen">Bayern Munchen</option>
+                </optgroup>
+        </form>
+    </fieldset>
+</body>
+
+</html>
