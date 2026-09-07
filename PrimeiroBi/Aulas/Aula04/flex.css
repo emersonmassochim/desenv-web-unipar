@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 200;
+}
+
+.caixa{
+
+    width: 140px;
+    height: 140px;
+    background-color: blueviolet;
+    border: solid 6px black;
+}

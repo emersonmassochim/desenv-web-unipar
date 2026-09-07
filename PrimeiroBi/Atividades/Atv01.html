@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Bruxo - Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="topo">
+        <h1>Mundo Bruxo</h1>
+        <a>Início</a>
+        <a>Posts</a>
+        <a>Newsletter</a>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>A Nova Série de TV de Harry Potter Chegou!</h2>
+            <p>Acompanhe aqui todas as novidades, teorias e curiosidades sobre a nova série
+                baseada nos livros que está movimentando o mundo bruxo.</p>
+        </section>
+
+        <section id="posts">
+            <h2>Últimas Postagens</h2>
+
+            <div id="container-posts">
+                <article class="post">
+                    <h3>Nova Temporada Anunciada</h3>
+                    <p>O estúdio confirmou a estreia do próximo episódio da série.</p>
+                </article>
+                <article class="post">
+                    <h3>Curiosidades sobre Hogwarts</h3>
+                    <p>Descubra detalhes que só os fãs mais atentos perceberam.</p>
+                </article>
+                <article class="post">
+                    <h3>Teorias dos Fãs</h3>
+                    <p>Veja as teorias mais comentadas sobre os próximos episódios.</p>
+                </article>
+                <article class="post">
+                    <h3>Novo Elenco Revelado</h3>
+                    <p>Conheça os atores que darão vida aos personagens na nova série.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Assista ao Teaser</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SJVmeJaS44s"
+                title="Harry Potter and the Philosopher's Stone | Official Teaser Trailer | HBO Max"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="newsletter">
+            <fieldset>
+                <legend>Assine a Newsletter</legend>
+                <h4>Receba as novidades do mundo bruxo em primeira mão</h4>
+
+                <form action="/url-api-back-end" method="post">
+                    <label for="nome">Informe seu Nome:</label>
+                    <input type="text" id="nome" name="nome" title="Digite seu nome completo"
+                        pattern="[A-Za-z ]+" placeholder="Digite seu nome">
+                    <br>
+
+                    <label for="email">Informe seu Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email"
+                        required title="Digite seu email">
+                    <br>
+
+                    <label for="casa">Selecione sua Casa Favorita</label>
+                    <br>
+                    <select name="casa" id="casa">
+                        <option value="" selected disabled>Selecione sua Casa</option>
+                        <optgroup label="Casas de Hogwarts">
+                            <option value="grifinoria">Grifinória</option>
+                            <option value="sonserina">Sonserina</option>
+                            <option value="corvinal">Corvinal</option>
+                            <option value="lufa-lufa">Lufa-Lufa</option>
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <button class="btn" type="submit">Quero Assinar</button>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Mundo Bruxo - Trabalho de Front-end</p>
+    </footer>
+
+</body>
+</html>

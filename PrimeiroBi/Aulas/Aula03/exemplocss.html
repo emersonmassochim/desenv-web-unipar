@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Exemplo de CSS Interno -->
+    <style>
+        #interno {
+            height: 100px;
+            width: 400px;
+            background-color: darkmagenta;
+            color: white;
+        }
+    </style>
+
+    <!-- Exemplo de CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <main>
+        <!-- Exemplo de CSS Inline -->
+        <!-- 1. Inline: O estilo é aplicado diretamente no elemento HTML, usando o atributo " -->
+        <section style="height: 100px; width: 400px; background-color: brown;">
+            <h1 style="color: white;">Exemplo de CSS Inline</h1>
+        </section>
+
+
+        <!-- Exemplo de CSS Interno -->
+        <!-- 2. Interno: O estilo é definido dentro da tag <style> no cabeçalho do documento HTML. -->
+        <section id = "interno">
+                <h1>Exemplo de CSS Interno</h1>
+        </section>
+
+        <!-- Exemplo de CSS Externo -->
+        <!-- 3. Externo: O estilo é definido em um arquivo CSS separado, que é vinculado ao documento HTML
+        usando a tag <link>. -->
+        <section id="Externo">
+            <h1>Exemplo de CSS Externo</h1>
+            <div>
+                <h1>Exemplo de CSS Externo 2 </h1>
+                <span>
+                    <h1>Exemplo de CSS Externo 3</h1>
+                </span>
+                <h1>Exemplo de CSS Externo 4</h1>
+                <p>Exemplo 1 </p>
+                <span>
+                    <p>Exemplo 2</p>
+                </span>
+            </div>
+
+            <button class = "btn">
+                Clique Aqui
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>

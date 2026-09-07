@@ -1,0 +1,44 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+
+#Externo {
+        height: 100px;
+        width: 400px;
+        background-color: #530953;
+        color: #585757;
+        margin: 400px;
+        padding: 200px;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vh;
+        background-color: #530953;
+        color: #585757;
+    }
+
+    div h1 {
+        color: white;
+    }
+
+    span+h1 {
+        color: red;
+    }
+
+    h1~p {
+        color: blue;
+    }
+
+    .btn {
+        padding: 12px;
+        background-color: darkgray;
+        boder-radius: 12px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }

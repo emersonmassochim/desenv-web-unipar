@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.relativo {
+
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: relative;
+    left: 40;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.absoluto {
+
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    left: 40%;
+    top: 4%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    opacity: 30%;
+}
+
+.fixo {
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: fixed;
+    left: 88%;
+    bottom: 10%;
+}
+
+
+.fixo:hover {
+   border-radius: 50%;
+}
