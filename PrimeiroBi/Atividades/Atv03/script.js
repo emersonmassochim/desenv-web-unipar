@@ -1,11 +1,14 @@
 function adicionar(evento) {
 
+    // Atividade 03
+
     evento.preventDefault();
 
     if (evento.target[0].value === "" && evento.target[1].value === "") {
         alert("Preencha os campos Tarefa e Data");
         return;
     }
+
 
     if (evento.target[0].value === "") {
         alert("Preencha o campo Tarefa");
