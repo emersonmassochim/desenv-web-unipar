@@ -38,16 +38,13 @@ function exibirSaldo() {
 // (Bônus opcional: validar se o usuário tem saldo suficiente antes de debitar).
 
 function realizarDebito(valor) {
-    
+
     if (valor <= titular.saldo) {
         titular.saldo -= valor;
         console.log(`Débito realizado com sucesso. Novo saldo: R$ ${titular.saldo.toFixed(2)}`);
     } else {
         console.log("Saldo insuficiente.");
         console.log(`Saldo atual: R$ ${titular.saldo.toFixed(2)}`);
-        rl.question("Digite um valor válido para débito: ", function (novoValor) {
-            realizarDebito(Number(novoValor)); // chama de novo, esperando a resposta
-        });
     }
 }
 
@@ -78,9 +75,6 @@ console.log("Bem-vindo ao Sistema Bancário!");
 let opcao;
 let valorDebito;
 let valorCredito;
-
-// Sistema bancário
-console.log("Bem-vindo ao Sistema Bancário!");
 
 function iniciarSistema() {
     exibirMenu();

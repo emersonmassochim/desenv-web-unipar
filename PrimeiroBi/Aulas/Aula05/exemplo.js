@@ -88,3 +88,13 @@ if (valor1 === valor2) {
     console.log("Os valores e tipos são iguais");
 }
 
+
+// leitor de entrada
+const readline = require("readline");
+
+if (true) {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    }); 
+    

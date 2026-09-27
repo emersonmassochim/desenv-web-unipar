@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header - Learn to Learn</title>
+    <style>
+        :root {
+            --bg: #f6f1e4;
+            --dark-green: #1f4536;
+            --text-muted: #6b7a72;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: var(--bg);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg);
+            padding: 20px 48px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .logo {
+            border: 2px solid var(--dark-green);
+            padding: 6px 16px;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark-green);
+            letter-spacing: 0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        nav a.active {
+            color: var(--dark-green);
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .minha-area {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--dark-green);
+            text-decoration: none;
+        }
+
+        .agendar-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--dark-green);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 999px;
+        }
+
+        .agendar-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Learn to Learn</div>
+
+        <nav>
+            <a href="#" class="active">Método</a>
+            <a href="#">Como Funciona</a>
+            <a href="#">Conteúdos</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <div class="right-side">
+            <a href="#" class="minha-area">Minha área</a>
+            <a href="#" class="agendar-btn">
+                Agendar aula
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Footer - Learn to Learn</title>
+    <style>
+        :root {
+            --bg: #f6f1e4;
+            --dark-green: #1f4536;
+            --text-muted: #6b7a72;
+            --label-color: #384942;
+            --dot-yellow: #e6c229;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+        }
+
+        footer {
+            background: var(--bg);
+            padding: 56px 48px 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .brand-col {
+            max-width: 320px;
+        }
+
+        .brand-col h2 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 16px;
+        }
+
+        .brand-col p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            color: var(--dark-green);
+        }
+
+        .socials svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .link-col h3 {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--label-color);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .link-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-col a {
+            text-decoration: none;
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        .institucional p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .status .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--dot-yellow);
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="footer-grid">
+
+            <div class="brand-col">
+                <h2>Learn to Learn</h2>
+                <p>Aprender inglês é transformar a forma como você interage com o mundo.</p>
+                <div class="socials">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.5" cy="6.5" r="1" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="6 4 20 12 6 20" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" />
+                        <path d="M19 15l.75 2.25L22 18l-2.25.75L19 21l-.75-2.25L16 18l2.25-.75L19 15z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="link-col">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Método</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="#">Conteúdos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="link-col">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Comece aqui</a></li>
+                    <li><a href="#">Aulas</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                </ul>
+            </div>
+
+            <div class="link-col institucional">
+                <h3>Institucional</h3>
+                <p>Learn to Learn, earthling-approved.</p>
+                <div class="status">
+                    <span class="dot"></span>
+                    <span>Vagas abertas</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

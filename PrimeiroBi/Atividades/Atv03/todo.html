@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <section id="exemplos">
+        <form onsubmit="adicionar(event)">
+            <label for="tarefa">Informe a Tarefa:</label>
+            <input type="text" name="tarefa" placeholder="Digite a tarefa">
+            <label for="data">Informe a Data:</label>
+            <input type="date" name="data" placeholder="Digite a data">
+            <button>
+                Adicionar
+            </button>
+
+        </form>
+        <h1>Lista de Tarefas</h1>
+        <ul class="container"></ul>
+
+      </section>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
