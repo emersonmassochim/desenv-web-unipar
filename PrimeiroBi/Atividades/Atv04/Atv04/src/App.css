@@ -1,0 +1,80 @@
+header {
+    background-color: #740001;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #4a0000;
+    padding: 16px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+nav a:hover {
+    color: #eeba30;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.post {
+    border: solid 2px #740001;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 3;
+}
+
+.post h2 {
+    color: #740001;
+    margin-bottom: 16px;
+}
+
+.post p {
+    margin-bottom: 12px;
+}
+
+aside {
+    background-color: #f4f1ea;
+    padding: 20px;
+    flex: 1;
+}
+
+aside h2 {
+    color: #740001;
+    margin-bottom: 16px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+footer {
+    background-color: #4a0000;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
